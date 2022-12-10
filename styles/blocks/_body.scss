@@ -1,9 +1,7 @@
 .body{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: contents;
     margin: 0;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -21,4 +19,12 @@
  
 .hamburguesa{
     max-height: 2em;
+}
+
+video{
+    max-height: 400px;
+}
+
+br {
+    color: yellow;
 }
