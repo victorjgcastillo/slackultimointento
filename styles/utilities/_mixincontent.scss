@@ -1,0 +1,7 @@
+@mixin flexElement ($play,$direction,$corte,$just,$aling){
+    display: $play;
+    flex-direction: $direction;
+    flex-wrap: $corte;
+    justify-content: $just;
+    align-items: $aling;
+}
