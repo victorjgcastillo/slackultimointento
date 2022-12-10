@@ -89,6 +89,7 @@ main{
              }
         }
         &_thirdpage{
+            padding: 20px;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -102,9 +103,18 @@ main{
             }
             &-paragraph{
                 max-width: 30rem;
-            }    
+                &-content{
+                    text-decoration: none;
+                }
+            }
+            @include movil {
+                flex-direction: column;
+                display: flex;
+
+            }
         }
         &_fourthpage{
+            padding: 20px;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -112,15 +122,27 @@ main{
             justify-content: space-around;
             align-items: center;
             background-color:$bg_color_sponsor;
+            &-content{
+            text-decoration: none;
+            }
             &-video{
                 max-width: 50%;
                 height: auto;
             }
             &-paragraph{
                 max-width: 30rem;
-            }    
+                &-content{
+                    text-decoration: none;
+                }
+            } 
+            @include movil {
+                flex-direction: column-reverse;
+                display: flex;   
+            }
+               
         }
         &_fifthpage{
+            padding: 20px;
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -134,8 +156,61 @@ main{
             }
             &-paragraph{
                 max-width: 30rem;
-            }    
+                &-content{
+                    text-decoration: none;
+                }
+            } 
+            @include movil {
+                flex-direction: column;
+                display: flex;   
+            }   
 
+        }
+        &_sixthpage{
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#ffff;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            &-buttons{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 9px;
+            }
+            &-porcents{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                &--items{
+                    list-style: none;
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    @include movil{
+                        flex-direction: column;
+                        display: flex;
+                    }
+                    &_number{
+                        color: purple;
+                        font-size: 2.5em;
+                        font-weight: bolder;
+                        
+                    }
+                    &_paragraph{
+                        font-size: 0.5em;
+                        text-align: center;
+                    }
+                    
+                }
+            }
         }
 
     }

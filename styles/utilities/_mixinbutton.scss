@@ -6,6 +6,8 @@
     padding: 3%;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid purple;
 }
 
 .googlebutton{
@@ -15,4 +17,18 @@
     padding: 3%;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+
+.purplebutton{
+    color: #fff;
+    background-color: #611f69;
+    fill: #611f69;
+    box-shadow: inset 0 0 0 1px #611f69;
+    padding: 3%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid white;
 }
