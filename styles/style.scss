@@ -1,4 +1,10 @@
-
-
+@import "./utilities/colors";
+@import "./utilities/mixinbutton";
+@import "./utilities/mixincontent";
+@import "./utilities/mixinmedia";
+@import "./utilities/responsive";
 
 @import "./blocks/body";
+@import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/footer";
