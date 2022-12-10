@@ -21,22 +21,52 @@ main{
             }
 
             &-leftconten{
-                display: flex;
-                max-width: 88%;
-                flex-direction: column;
-                flex-wrap: wrap;
+                width: 90%;
+                padding-bottom: 5px;
                 &--title{
                     color: white;
                     &_resaltado{
-                        color: yellow;
+                        color: rgb(225, 179, 29);
                     }
                 }
-            }
+                &--subtitle{
+                    font-weight: lighter;
+                    font-size: 0.6em;
+                    &-desaparece{
+                        @include movil {
+                            display: none;
+                        }
+                    }
+
+                }
+                &--button{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px;
+                    gap: 6px;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    align-items: stretch;
+                }
+                
+                @include movil {
+                     text-align: center;
+                     font-size: 1 em;
+                 }
+                @include desktop {
+                    text-align: left;
+                    font-size: 1.7em;
+                 }
+                 
+          }
+        }
 
             &-rightimagen{
                 max-width: 700px;
             }
-        }
 
         &_secondpage{
             display: flex;
@@ -44,11 +74,11 @@ main{
             width: 100%;
             justify-content: center;
             background-color:$bg_color_sponsor;
-            &-title{width: 100%;
+            &-title{
+                width: 100%;
                 font-size: 1em;
                 display: flex;
                 justify-content: center;
-                width: 100%;
             }
             &-sponsorship{   
                 display: flex;
@@ -73,6 +103,39 @@ main{
             &-paragraph{
                 max-width: 30rem;
             }    
+        }
+        &_fourthpage{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color:$bg_color_sponsor;
+            &-video{
+                max-width: 50%;
+                height: auto;
+            }
+            &-paragraph{
+                max-width: 30rem;
+            }    
+        }
+        &_fifthpage{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color:$bg_color_sponsor;
+            &-video{
+                max-width: 50%;
+                height: auto;
+            }
+            &-paragraph{
+                max-width: 30rem;
+            }    
+
         }
 
     }
