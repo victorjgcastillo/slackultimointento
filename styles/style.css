@@ -1,11 +1,8 @@
 .body {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   max-width: 100%;
   overflow-x: hidden;
   display: flex;
@@ -25,6 +22,10 @@
   }
 }
 
+.hamburguesa {
+  max-height: 2em;
+}
+
 header {
   display: block;
   width: 100%;
@@ -37,10 +38,15 @@ header .cabecera {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: 80px;
   border-bottom: none;
   /* position: absolute;*/
+}
+@media screen and (max-width: 991px) {
+  header .cabecera {
+    flex-wrap: nowrap;
+  }
 }
 header .cabecera_logo {
   max-width: 20%;
@@ -57,7 +63,43 @@ header .cabecera_elementos-lista {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  gap: 8px;
+  gap: 14px;
   text-decoration: none;
   color: white;
+}
+@media screen and (max-width: 991px) {
+  header .cabecera_elementos-lista {
+    display: none;
+  }
+}
+header .cabecera_hamburguesa {
+  max-height: 20px;
+}
+@media screen and (min-width: 992px) {
+  header .cabecera_hamburguesa {
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+}
+main .sections {
+  width: 100%;
+}
+main .sections_firtspage {
+  display: grid;
+  grid-template-columns: 56% 42%;
+  background-color: rgb(84, 25, 84);
+  color: white;
+}
+main .sections_firtspage-leftconten {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
 }/*# sourceMappingURL=style.css.map */

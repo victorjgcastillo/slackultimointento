@@ -1,11 +1,8 @@
 .body{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 0;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     max-width: 100%;
     overflow-x: hidden;
     display: flex;
@@ -22,3 +19,6 @@
         }
 }
  
+.hamburguesa{
+    max-height: 2em;
+}

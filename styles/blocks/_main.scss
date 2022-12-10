@@ -1,0 +1,25 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+
+    .sections{
+        width: 100%;
+
+        &_firtspage{
+            display: grid;
+            grid-template-columns: 56% 42%;
+            background-color: $bg_color_header;
+            color: white;
+            &-leftconten{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+        }
+    }
+
+}

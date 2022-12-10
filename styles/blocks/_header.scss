@@ -6,10 +6,13 @@ header{
 
     .cabecera{
         @include flexElement (flex,row,wrap,space-between,center);
-        width: 100%;
+        width: 90%;
         height: 80px;
         border-bottom: none;
     /* position: absolute;*/
+        @include movil {
+            flex-wrap: nowrap;
+         }
 
         &_logo{
             max-width: 20%;
@@ -27,10 +30,20 @@ header{
                 flex-direction: row;
                 align-items: center;
                 width: 100%;
-                gap: 8px;
+                gap: 14px;
                 text-decoration: none;
                 color: white;
+                @include movil {
+                    display: none;
+                  }
             }
+        }
+        &_hamburguesa{
+
+                @include desktop {
+                  display: none;
+                }
+                max-height: 20px;
         }
     }
 }
