@@ -5,20 +5,71 @@ footer{
     padding-top: 3.5rem;
     padding-bottom: 0;
     
-}
+
 .logoul{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     &_icon{
+        display: contents;
         &-img{
-            max-width: 10%;
+            max-width: 5%;
         }
-        
-    }
+        }
     &_principallist{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-gap: 1rem 0;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: start;
+        justify-items: center;
+        
+        
+        &--ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            flex-wrap: wrap;
+            padding: 0.5em;
+            &-title{
+                text-transform: uppercase;
+                color: black;
+                font-size: medium;
+                align-content: flex-end;
+                }
+            &_li{
+                color: grey;
+                font-weight: lighter;
+                font-size: small;
+                padding: 10px;
+            }
+            }
+            
+
+        }
+
+    }
+    .metasocial{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        &_contenido{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+            color: black;
+        }
+        &_socialmedia{
+            display: flex;
+            flex-direction: row;
+            width: 20%;
+            &-img{
+                max-width: 10%;
+            }
+        }
     }
 }

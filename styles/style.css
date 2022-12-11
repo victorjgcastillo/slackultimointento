@@ -482,17 +482,64 @@ footer {
   padding-top: 3.5rem;
   padding-bottom: 0;
 }
-
-.logoul {
+footer .logoul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.logoul_icon-img {
-  max-width: 10%;
+footer .logoul_icon {
+  display: contents;
 }
-.logoul_principallist {
+footer .logoul_icon-img {
+  max-width: 5%;
+}
+footer .logoul_principallist {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1rem 0;
+  align-items: start;
+  justify-items: center;
+}
+footer .logoul_principallist--ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-wrap: wrap;
+  padding: 0.5em;
+}
+footer .logoul_principallist--ul-title {
+  text-transform: uppercase;
+  color: black;
+  font-size: medium;
+  align-content: flex-end;
+}
+footer .logoul_principallist--ul_li {
+  color: grey;
+  font-weight: lighter;
+  font-size: small;
+  padding: 10px;
+}
+footer .metasocial {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+footer .metasocial_contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  color: black;
+}
+footer .metasocial_socialmedia {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+}
+footer .metasocial_socialmedia-img {
+  max-width: 10%;
 }/*# sourceMappingURL=style.css.map */
