@@ -295,7 +295,7 @@ main{
                     @include tablet{
                         @media screen and (max-width: $tablet){
                             grid-template-columns: repeat(2,1fr);
-                            max-width: 73%;
+                            max-width: 100%;
                         }
                         }
                     @include movil{
@@ -307,13 +307,18 @@ main{
                         }
                     
                     &-individual{
-                        padding: 20px;
+                        padding: 10px;
                         list-style: none;
                         background-color: white;
                         box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
                         gap: 5em;
+                        max-width: 74%;
+                        &--pic{
+                            max-width: 100%;
+                        }
                         
                         &--desaparece{
+                            max-width: 74%;
                             padding: 20px;
                             box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
                             background-color: white;
