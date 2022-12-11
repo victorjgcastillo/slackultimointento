@@ -60,7 +60,7 @@
 }
 
 video {
-  max-height: 400px;
+  max-width: 100%;
 }
 
 br {
@@ -111,6 +111,7 @@ header .cabecera_elementos-lista {
   gap: 14px;
   text-decoration: none;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media screen and (max-width: 661px) {
   header .cabecera_elementos-lista {
@@ -139,19 +140,19 @@ main .sections {
 main .sections_firtspage {
   padding: 20px;
   display: grid;
-  grid-template-columns: 56% 42%;
+  grid-template-columns: 35% 66%;
   background-color: rgb(84, 25, 84);
   color: white;
 }
 @media screen and (max-width: 661px) and (max-width: 661px) {
   main .sections_firtspage {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 main .sections_firtspage-leftconten {
   width: 90%;
   padding-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main .sections_firtspage-leftconten--title {
   color: white;
@@ -528,7 +529,7 @@ footer .metasocial {
 footer .metasocial_contenido {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 10px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -33,6 +33,7 @@ header{
                 gap: 14px;
                 text-decoration: none;
                 color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
                 @include movil {
                     display: none;
                   }
