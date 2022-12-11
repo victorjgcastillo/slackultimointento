@@ -3,10 +3,10 @@
 // $desktop: 992px;
 // $large: 1200px;
 
-$landscape: 991px;
+$landscape: 661px;
 $tablet: 991px;
 $desktop: 992px;
-$large: 992px;
+$large: 1100px;
 
 @mixin movil{
     @media screen and (max-width: $landscape){

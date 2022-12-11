@@ -44,7 +44,7 @@
   text-decoration: none;
   font-family: Slack-Circular-Pro, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   .body {
     width: 100%;
   }
@@ -88,7 +88,7 @@ header .cabecera {
   border-bottom: none;
   /* position: absolute;*/
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   header .cabecera {
     flex-wrap: nowrap;
   }
@@ -112,7 +112,7 @@ header .cabecera_elementos-lista {
   text-decoration: none;
   color: white;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   header .cabecera_elementos-lista {
     display: none;
   }
@@ -137,12 +137,13 @@ main .sections {
   width: 100%;
 }
 main .sections_firtspage {
+  padding: 20px;
   display: grid;
   grid-template-columns: 56% 42%;
   background-color: rgb(84, 25, 84);
   color: white;
 }
-@media screen and (max-width: 991px) and (max-width: 991px) {
+@media screen and (max-width: 661px) and (max-width: 661px) {
   main .sections_firtspage {
     display: flex;
     flex-direction: column;
@@ -162,7 +163,7 @@ main .sections_firtspage-leftconten--subtitle {
   font-weight: lighter;
   font-size: 0.6em;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_firtspage-leftconten--subtitle-desaparece {
     display: none;
   }
@@ -179,13 +180,13 @@ main .sections_firtspage-leftconten--button {
   align-content: center;
   align-items: stretch;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) and (max-width: 661px) {
   main .sections_firtspage-leftconten {
     text-align: center;
     font-size: 1 em;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 991px) {
   main .sections_firtspage-leftconten {
     text-align: left;
     font-size: 1.7em;
@@ -194,7 +195,26 @@ main .sections_firtspage-leftconten--button {
 main .sections-rightimagen {
   max-width: 700px;
 }
+main .sections-video {
+  max-width: 97%;
+  height: auto;
+  padding: 20px;
+}
+@media screen and (max-width: 661px) and (max-width: 661px) {
+  main .sections-video {
+    max-width: 97%;
+    height: auto;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 991px) {
+  main .sections-video {
+    text-align: left;
+    font-size: 1.7em;
+  }
+}
 main .sections_secondpage {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -234,7 +254,7 @@ main .sections_thirdpage-paragraph {
 main .sections_thirdpage-paragraph-content {
   text-decoration: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_thirdpage {
     flex-direction: column;
     display: flex;
@@ -263,7 +283,7 @@ main .sections_fourthpage-paragraph {
 main .sections_fourthpage-paragraph-content {
   text-decoration: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_fourthpage {
     flex-direction: column-reverse;
     display: flex;
@@ -289,7 +309,7 @@ main .sections_fifthpage-paragraph {
 main .sections_fifthpage-paragraph-content {
   text-decoration: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_fifthpage {
     flex-direction: column;
     display: flex;
@@ -318,7 +338,7 @@ main .sections_sixthpage-porcents {
   flex-direction: row;
   gap: 20px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_sixthpage-porcents {
     flex-direction: column;
     display: flex;
@@ -371,7 +391,7 @@ main .sections_seventhpage-video {
   height: auto;
   border-radius: 2em;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 661px) {
   main .sections_seventhpage {
     flex-direction: column;
     display: flex;
@@ -379,8 +399,12 @@ main .sections_seventhpage-video {
   }
 }
 main .sections_eightpage {
+  padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgb(244, 237, 228);
+  align-items: center;
 }
 main .sections_eightpage-title {
   text-align: center !important;
@@ -388,8 +412,60 @@ main .sections_eightpage-title {
 main .sections_eightpage-stickers {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 5em;
+  list-style: none;
+}
+@media screen and (max-width: 991px) and (max-width: 991px) {
+  main .sections_eightpage-stickers {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 73%;
+  }
+}
+@media screen and (max-width: 661px) and (max-width: 661px) {
+  main .sections_eightpage-stickers {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
 }
 main .sections_eightpage-stickers-individual {
+  padding: 20px;
   list-style: none;
+  background-color: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  gap: 5em;
+}
+main .sections_eightpage-stickers-individual--desaparece {
+  padding: 20px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+@media screen and (max-width: 661px) and (max-width: 661px) {
+  main .sections_eightpage-stickers-individual--desaparece {
+    display: none !important;
+  }
+}
+main .sections_ninethpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4a154b;
+  border: none;
+  -webkit-clip-path: ellipse(75% 100% at center top);
+          clip-path: ellipse(75% 100% at center top);
+  height: auto;
+  min-height: 370px;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+main .sections_ninethpage-title {
+  font-weight: bolder;
+  color: azure;
+}
+main .sections_ninethpage-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
 }/*# sourceMappingURL=style.css.map */
